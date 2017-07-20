@@ -1,0 +1,12 @@
+.title {
+    font-weight: 600;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.companies {
+    border: 1px solid black;
+    height: 200px;
+    margin: 15px 7px;
+}

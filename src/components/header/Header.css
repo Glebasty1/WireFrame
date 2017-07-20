@@ -1,0 +1,39 @@
+.header {
+    margin-top: 20px;
+}
+
+.links {
+    display: inline-block;
+}
+
+#logo {
+    border: 1px solid black;
+    width: 150px;
+    height: 100px;
+}
+
+.links a {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.links a:focus {
+    color: black;
+    text-decoration: none;
+}
+.button-links {
+    border: 2px solid black;
+    padding: 5px 15px;
+}
+
+.links span {
+    font-size: 20px;
+    margin-left: 35px;
+}
