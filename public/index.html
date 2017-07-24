@@ -5,9 +5,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <title>WireFrame</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <link rel="stylesheet" href="    https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
   </head>
   <body>
-    <div id="root"></div>
+  <div class="container-fluid">
+
+    <!-- Header block -->
+    <div class="row">
+      <div class="header">
+      <div class="col-sm-3 col-md-3">
+        <div id="logo"></div>
+      </div>
+      <div class="col-md-9 col-md-9">
+        <div class="links">
+          <span><a href="#">How we work</a></span>
+          <span><a href="#">Companies</a></span>
+          <span><a href="#">Testimonials</a></span>
+          <span><a href="#">Contact Us</a></span>
+          <span><a class="button-links" href="#">Sign Up</a></span>
+          <span><a class="button-links" href="#">Login</a></span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- End of header block -->
+
+    <!-- Slider block -->
+    <div class="row">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active indicarots"></li>
+          <li class="indicarots" data-target="#myCarousel" data-slide-to="1"></li>
+          <li class="indicarots" data-target="#myCarousel" data-slide-to="2"></li>
+          <li class="indicarots"data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <h1 class="text-center">Extending your team?</h1>
+            <h3 class="text-center">Find a perfect match</h3>
+          </div>
+
+          <div class="item">
+            <h1 class="text-center">Extending your team?</h1>
+            <h3 class="text-center">Find a perfect match</h3>
+          </div>
+
+          <div class="item">
+            <h1 class="text-center">Extending your team?</h1>
+            <h3 class="text-center">Find a perfect match</h3>
+          </div>
+
+          <div class="item">
+            <h1 class="text-center">Extending your team?</h1>
+            <h3 class="text-center">Find a perfect match</h3>
+          </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+
+          <i class="fa fa-arrow-left fa-4x" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <i class="fa fa-arrow-right fa-4x" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- End of slider block -->
+
+    <!-- Our Work block -->
+    <div class="row">
+      <div class="our-work">
+        <h1 class="title">how we work</h1>
+        <div class="col-md-7">
+          <p>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores autem culpa cum cumque deleniti ea eligendi, impedit inventore iusto maxime nam nobis nostrum pariatur placeat quisquam ratione ut, vel?</span>
+            <span>Ad amet aperiam architecto autem consectetur deserunt eligendi est expedita fugiat fugit incidunt iure laudantium maiores nulla quaerat quasi ut, vitae! Distinctio eaque enim, laborum nihil perferendis quae similique soluta!</span>
+            <br/>
+            <br/>
+            <span>Assumenda, provident, tenetur? Accusantium asperiores aut esse fugiat iste, numquam officia possimus quaerat similique vel? Aliquid, quidem ratione. Cum, cumque debitis eligendi facilis iure maxime officia praesentium quod ratione ut.</span>
+            <br/>
+            <br/>
+            <span>Atque quae quam repellendus vel velit. Animi dolorem ea eveniet ex, magnam maxime nihil provident quam quia quidem sint totam vitae voluptas! Enim facilis ipsam numquam officiis reprehenderit sed, unde.</span>
+            <span>Ab animi consectetur deleniti dicta distinctio dolore ea eos et excepturi facilis fuga impedit incidunt inventore ipsam iure, iusto magni modi nam nemo quas quia ratione sint soluta suscipit vero.</span>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/acuhmtI_bj8"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <!-- End of our work block -->
+
+    <!-- Companies block -->
+      <div class="row">
+        <h1 class="title">featured Companies</h1>
+        <div class="col-md-4 ">
+          <div class="companies"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="companies"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="companies"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="companies"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="companies"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="companies"></div>
+        </div>
+      </div>
+    <!-- End of companies block -->
+
+    <!-- World Map block -->
+      <h1 class="title">world population map</h1>
+      <div className="row">
+        <div className="col-md-12">
+          <div id="root"></div>
+        </div>
+      </div>
+    <div class="own-profile">
+      <div class="row">
+          <div class="col-sm-9 col-md-9">
+            <p class="title-content">start building your own profile now </p>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <input type="button" class="get-started" value="Get Started" />
+          </div>
+        </div>
+      </div>
+    <!-- End of world map block -->
+
+    <!-- Contact us block -->
+    <div class="row">
+      <div class="contact-us">
+        <div class="col-md-9">
+          <h3 class="title">DROP US A LINE</h3>
+          <input class="input-text" type="text" placeholder="NAME" />
+          <input class="input-text" type="email" placeholder="EMAIL" />
+          <textarea class="textarea-message" type="text" placeholder="MESSAGE"></textarea>
+        </div>
+        <div class="col-md-3">
+          <h3 class="title">VISIT OUR OFFICE</h3>
+          <div id="location">
+            <span>
+              <strong>NEW YORK</strong> <br/><br/>
+
+              5 Park Avenue <br/>
+              New York, NY 10016 <br/>
+              USA <br/><br/>
+
+              +1 718.242.5555 <br/>
+              +1 718.242.5556 <br/>
+              ny@jobseek.com <br/><br/>
+
+              Mon-Fri 9am - 5pm <br/>
+              Sat 10am - 2pm <br/>
+              Sun Closed <br/>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of contact us block -->
+
+    <!-- Footer block -->
+    <div class="row">
+      <div class="footer">
+        <div class="col-md-12">
+          <a href="https://code.facebook.com/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/?lang=en-GB"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+          <a href="https://ru.pinterest.com/"><i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i></a>
+          <div class="rights">&copy; 2017 SiteName - all rights reserved</div>
+        </div>
+      </div>
+    </div>
+    <!-- End of footer us block -->
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>

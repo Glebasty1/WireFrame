@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.16.2",
+    "babyparse": "^0.4.6",
     "bootstrap": "^3.3.7",
+    "d3": "^4.10.0",
+    "datamaps": "^0.5.8",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "topojson": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
